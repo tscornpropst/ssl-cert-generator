@@ -1,0 +1,18 @@
+[req]
+default_bits        = 1024
+days                = 9999
+distinguished_name  = req_distinguished_name
+attributes          = req_attributes
+prompt              = no
+
+[req_distinguished_name]
+C                   = <COUNTRY CODE>
+ST                  = <REGION CODE>
+L                   = <LOCALITY>
+O                   = <ORG NAME>
+OU                  = <ORG UNIT>
+CN                  = agent1
+emailAddress        = <EMAIL ADDRESS>
+
+[req_attributes]
+challengePassword   = <PASSWORD>

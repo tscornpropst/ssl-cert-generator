@@ -1,0 +1,19 @@
+[req]
+default_bits        = 1024
+days                = 9999
+default_keyfile     = selfcert-key.pem
+distinguished_name  = req_distinguished_name
+attributes          = req_attributes
+prompt              = no
+
+[req_distinguished_name]
+C                   = <COUNTRY CODE>
+ST                  = <REGION CODE>
+L                   = <LOCALITY>
+O                   = <ORG NAME>
+OU                  = <ORG UNIT>
+CN                  = selfcert
+emailAddress        = <EMAIL ADDRESS>
+
+[req_attributes]
+challengePassword   = <PASSWORD>
